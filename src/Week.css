@@ -1,0 +1,53 @@
+  :local(.component) {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+ 
+}
+
+:local(.days),
+:local(.header) {
+  display: flex;
+  align-items: flex-start;
+}
+
+:local(.header) {
+  align-items: stretch;
+}
+
+:local(.daysWrapper) {
+  position: relative;
+
+  flex: 1 1 auto;
+
+}
+
+:local(.allDayLabel) {
+  position: absolute;
+  left: -25px;
+  bottom: 3px;
+  font-size: 10px;
+  line-height: 1;
+}
+
+:local(.header) {
+  position: sticky;
+  top:0;
+  flex-shrink: 0;
+  border-bottom: 2px solid #d6d6d6;
+}
+
+:local(.lines) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+:local(.hour) {
+  border-bottom: 1px solid #d6d6d6;
+  pointer-events: none;
+}
+

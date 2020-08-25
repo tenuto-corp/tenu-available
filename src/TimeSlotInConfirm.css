@@ -1,0 +1,62 @@
+:local(.component) {
+    background-color: #98f0b3;
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 5px;
+    border-bottom:   1px solid #acacac;
+  }
+  :local(.component2) {
+    background-color: #a3a3a363;
+    border-left: 1px solid #acacac;
+    position: absolute;
+    width: 100%;
+    color: #3d464d;
+    overflow: hidden;
+    cursor: default;
+    border-radius: 5px;
+    border-bottom:   1px solid #acacac;
+  }
+  :local(.active) {
+    pointer-events: none;
+  }
+  
+  :local(.delete) {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    padding: 0 5px;
+    border: none;
+    background-color: #fff;
+    display: none;
+    font-size: 20px;
+    line-height: 1;
+    color: #999;
+  }
+  
+  :local(.component):hover :local(.delete) {
+    display: block;
+  }
+  
+  :local(.frozen) {
+    background-color: #d6dfe5;
+    border-left: 1px solid #acacac;
+    color: #3d464d;
+    opacity: 1;
+    cursor: default;
+  }
+  
+ 
+  
+  :local(.title) {
+    padding: 0px 5px;
+    font-size: 10px;
+    font-weight: 600;
+    overflow: hidden;
+    max-height: 100%;
+    pointer-events: none;
+    word-wrap: break-word;
+  }
+  

@@ -1,0 +1,42 @@
+:local(.component) {
+  flex-shrink: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+:local(.day) {
+  flex-shrink: 0;
+  padding: 5px;
+  text-align: center;
+}
+
+:local(.transparent) {
+  opacity: 0.25;
+}
+
+:local(.events) {
+  flex-grow: 1;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #d6d6d6;
+  min-height: 15px;
+  border-left: 1px solid #d6d6d6;
+  border-right: 1px solid #d6d6d6;
+}
+
+:local(.event) {
+  flex-basis: 33.3333%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 3px;
+  background-color: #d6dfe5;
+  border-left: 1px solid #acacac;
+  font-weight: 100;
+  color: #3d464d;
+  margin: 1px;
+}
