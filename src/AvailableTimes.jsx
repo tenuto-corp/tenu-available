@@ -275,7 +275,7 @@ export default class AvailableTimes extends PureComponent {
             <Slider
               index={currentWeekIndex}
               onSlide={this.move}
-              disabled={true}
+              disabled={recurring}
               >
               {weeks.map((week, i) => {
                 if ((recurring || Math.abs(i - currentWeekIndex) > 1) && i !== 0) {
