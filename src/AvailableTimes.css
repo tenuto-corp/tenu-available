@@ -7,7 +7,7 @@
   position: relative;
   width: 100%;
   height: 1840px;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.2;
   font-family: helvetica, arial, sans-serif;
   color: #666;
@@ -32,8 +32,8 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  padding: 10px 0px 25px 15px;
-  font-size: 18px;
+  padding: 10px 0px 25px 6px;
+  font-size: 12px;
 }
 
 :local(.buttons) {
@@ -65,7 +65,7 @@
 
 :local(.interval) {
   flex-shrink: 1;
-  flex-basis: 100px;
+  flex-basis: 120px;
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: right;
