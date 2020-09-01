@@ -17,7 +17,7 @@ export default function Ruler({ timeConvention }) {
           className={styles.hour}
           style={{ height: HOUR_IN_PIXELS }}
         >
-          <div style={{fontSize="8px"}} className={styles.inner}>
+          <div style={{fontSize:"8px"}} className={styles.inner}>
             {hour !== '00' && hour !== '12am' ? hour : null}
           </div>
         </div>
