@@ -1,6 +1,6 @@
 {
   "name": "@taemu12/tenu-available",
-  "version": "1.5.6",
+  "version": "1.5.7",
   "description": "A calendar to pick available time slots",
   "main": "dist/main.js",
   "author": "taemu12 <taemu12@tenuto.co.kr>",
