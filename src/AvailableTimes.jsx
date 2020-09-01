@@ -272,11 +272,6 @@ export default class AvailableTimes extends PureComponent {
             </div>
           }
           <div className={styles.main}>
-            <Slider
-              index={currentWeekIndex}
-              onSlide={this.move}
-              disabled={recurring}
-            >
               {weeks.map((week, i) => {
                 if ((recurring || Math.abs(i - currentWeekIndex) > 1) && i !== 0) {
                   return <span key={week.start} />;
@@ -303,7 +298,6 @@ export default class AvailableTimes extends PureComponent {
                   />
                 );
               })}
-            </Slider>
           </div>
         </div>
         <button
