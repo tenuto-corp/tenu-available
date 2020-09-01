@@ -5,6 +5,7 @@ import momentTimezone from 'moment-timezone';
 import { WEEKS_PER_TIMESPAN, DAYS_IN_WEEK } from './Constants';
 import { validateDays } from './Validators';
 import EventsStore from './EventsStore';
+import Slider_fix from './Slider_fix';
 import Slider from './Slider';
 import Week from './Week';
 import makeRecurring from './makeRecurring';
@@ -167,6 +168,7 @@ export default class AvailableTimes extends PureComponent {
 
   expandWeeks(weeks, weekIndex) {
     if (weeks.length - weekIndex > WEEKS_PER_TIMESPAN) {
+      
       // no need to expand
       return weeks;
     }
@@ -272,7 +274,7 @@ export default class AvailableTimes extends PureComponent {
             </div>
           }
           <div className={styles.main}>
-            <Slider
+            <Slider_fix
               index={currentWeekIndex}
               onSlide={this.move}
               disabled={recurring}
@@ -304,7 +306,7 @@ export default class AvailableTimes extends PureComponent {
                 );
                 
               })}
-              </Slider>
+              </Slider_fix>
           </div>
         </div>
         <button
