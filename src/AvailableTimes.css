@@ -65,7 +65,7 @@
 
 :local(.interval) {
   flex-shrink: 1;
-  flex-basis: 120px;
+  flex-basis: 100px;
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: right;
