@@ -170,9 +170,6 @@ export default class Week extends PureComponent {
             maxWidth: daysWidth,
           }}
         >
-          <div className={styles.allDayLabel}>
-              시간
-          </div>
           {filteredDays.map((day, i) => (
             <DayHeader
               index={i}

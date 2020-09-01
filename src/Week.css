@@ -25,7 +25,7 @@
 
 :local(.allDayLabel) {
   position: absolute;
-  left: -5px;
+  left: 5px;
   bottom: 3px;
   font-size: 8px;
   line-height: 1;
