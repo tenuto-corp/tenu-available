@@ -191,7 +191,7 @@ export default class Week extends PureComponent {
             }
             this.alreadyScrolled = true;
             // eslint-disable-next-line no-param-reassign
-            element.scrollTop = HOUR_IN_PIXELS * 6.5;
+            element.scrollTop = HOUR_IN_PIXELS * 8.5;
           }}
         >
           <div className={styles.lines}>

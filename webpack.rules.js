@@ -4,7 +4,14 @@ module.exports = [
   {
     test: /\.jsx?/,
     exclude: /node_modules/,
-    loader: 'babel-loader',
+    use: [
+      {
+        loader: 'babel-loader',
+        options: {
+          presets: ['react']
+        }
+      }
+    ],
   },
   {
     test: /\.css$/,

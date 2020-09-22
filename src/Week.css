@@ -3,7 +3,7 @@
   flex-direction: column;
   height: 100%;
   width: 100%;
- 
+
 }
 
 :local(.days),
@@ -18,9 +18,9 @@
 
 :local(.daysWrapper) {
   position: relative;
-
+  overflow: auto;
   flex: 1 1 auto;
-
+  -webkit-overflow-scrolling: touch;
 }
 
 :local(.allDayLabel) {
@@ -32,8 +32,7 @@
 }
 
 :local(.header) {
-  position: sticky;
-  top:0;
+  position: relative;
   flex-shrink: 0;
   border-bottom: 2px solid #d6d6d6;
 }

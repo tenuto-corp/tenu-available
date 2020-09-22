@@ -22,7 +22,6 @@
   :local(.active) {
     pointer-events: none;
   }
-  
   :local(.delete) {
     position: absolute;
     top: 3px;
@@ -35,11 +34,9 @@
     line-height: 1;
     color: #999;
   }
-  
   :local(.component):hover :local(.delete) {
     display: block;
   }
-  
   :local(.frozen) {
     background-color: #d6dfe5;
     border-left: 1px solid #acacac;
@@ -47,9 +44,6 @@
     opacity: 1;
     cursor: default;
   }
-  
- 
-  
   :local(.title) {
     padding: 0px 5px;
     font-size: 10px;
@@ -59,4 +53,3 @@
     pointer-events: none;
     word-wrap: break-word;
   }
-  
