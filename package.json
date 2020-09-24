@@ -1,6 +1,6 @@
 {
   "name": "@taemu12/tenu-available",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "A calendar to pick available time slots",
   "main": "dist/main.js",
   "author": "taemu12 <taemu12@tenuto.co.kr>",
@@ -13,7 +13,7 @@
     "build": "npm run clean && webpack",
     "lint": "eslint . --ext=.js,.jsx",
     "start-test": "node src/testServer.js",
-    "prepublish": "npm run test && npm run build",
+    "prepublish": "npm run build",
     "test": "npm run lint && jest"
   },
   "jest": {
