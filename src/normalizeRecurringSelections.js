@@ -19,7 +19,7 @@ export default function normalizeRecurringSelections(
     .minute(0)
     .seconds(0)
     .milliseconds(0);
-  weekStart.day(weekStartsOn === 'monday' ? 1 : 0);
+  weekStart.day(weekStartsOn);
 
   // To avoid DST issues, move to the first week of the year (which should be
   // DST free).

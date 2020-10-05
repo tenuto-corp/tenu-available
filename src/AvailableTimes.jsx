@@ -168,7 +168,7 @@ export default class AvailableTimes extends PureComponent {
 
   expandWeeks(weeks, weekIndex) {
     if (weeks.length - weekIndex > WEEKS_PER_TIMESPAN) {
-      
+
       // no need to expand
       return weeks;
     }
@@ -304,7 +304,7 @@ export default class AvailableTimes extends PureComponent {
                     timeslotHandleClick={timeslotHandleClick}
                   />
                 );
-                
+
               })}
               </Slider_fix>
           </div>
@@ -321,7 +321,7 @@ export default class AvailableTimes extends PureComponent {
 }
 
 AvailableTimes.propTypes = {
-  weekStartsOn: PropTypes.oneOf(['sunday', 'monday']),
+  weekStartsOn: PropTypes.oneOf([0, 1, 2, 3, 4, 5, 6]),
   timeConvention: PropTypes.oneOf(['12h', '24h']),
   timeZone: PropTypes.string.isRequired,
   initialSelections: PropTypes.arrayOf(PropTypes.shape({
@@ -356,7 +356,7 @@ AvailableTimes.propTypes = {
 
 AvailableTimes.defaultProps = {
   timeZone: momentTimezone.tz.guess(),
-  weekStartsOn: 'sunday',
+  weekStartsOn: 1,
   touchToDeleteSelection: 'ontouchstart' in window,
   availableDays: DAYS_IN_WEEK,
   availableHourRange: { start: 0, end: 24 },

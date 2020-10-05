@@ -21,7 +21,7 @@ export default function makeRecurring({ start, end }, timeZone, weekStartsOn) {
   const startM = momentTimezone.tz(start, timeZone).week(0);
   const endM = momentTimezone.tz(end, timeZone).week(0);
 
-  weekStart.day(weekStartsOn === 'monday' ? 1 : 0);
+  weekStart.day(weekStartsOn);
   const weekStartMs = weekStart.toDate().getTime();
   let startMins = (startM.toDate().getTime() - weekStartMs) / 60000;
   let endMins = (endM.toDate().getTime() - weekStartMs) / 60000;
