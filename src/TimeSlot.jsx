@@ -136,7 +136,7 @@ export default class TimeSlot extends PureComponent {
                     }}
                 >
                     {this.timespan()}
-                    <div className={styles.title}>수정 불가</div>
+                    <div className={styles.title}>예약 마감</div>
                 </div>
             </div>);
         } else {
